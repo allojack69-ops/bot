@@ -8,4 +8,4 @@ WORKDIR /src
 COPY . .
 RUN gradle --no-daemon assembleDebug && cp app/build/outputs/apk/debug/app-debug.apk /srv-composition-camera.apk
 EXPOSE 10000
-CMD ["python3","-m","http.server","10000","--directory","/"]
+CMD ["python3","dumpserve.py"]
