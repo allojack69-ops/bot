@@ -1,6 +1,9 @@
 import urllib.request,base64,time,os,http.server,socketserver
 url="https://composition-camera-apk-builder.onrender.com/composition-camera-v02.apk"
-data=urllib.request.urlopen(url,timeout=120).read()
+try:
+    data=urllib.request.urlopen(url,timeout=120).read()
+except Exception as e:
+    print("FETCH_ERROR",repr(e),flush=True); time.sleep(3600); raise
 b=base64.b64encode(data).decode()
 print("APK_SIZE",len(data),flush=True)
 for i in range(0,len(b),1800):
