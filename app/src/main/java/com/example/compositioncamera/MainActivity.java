@@ -1,5 +1,5 @@
 package com.example.compositioncamera;
-import android.Manifest; import android.app.*; import android.os.*; import android.content.pm.PackageManager; import android.graphics.*; import android.hardware.camera2.*; import android.media.*; import android.view.*; import java.nio.*; import java.util.*;
+import android.Manifest; import android.app.*; import android.widget.FrameLayout; import android.os.*; import android.content.pm.PackageManager; import android.graphics.*; import android.hardware.camera2.*; import android.media.*; import android.view.*; import java.nio.*; import java.util.*;
 
 public class MainActivity extends Activity {
  FrameLayout root; TextureView preview; CompositionOverlayView overlay; CameraDevice camera; CameraCaptureSession session; ImageReader reader;
