@@ -1,0 +1,5 @@
+# One public Threads username per line; do not include @.
+# Add real target usernames in GitHub Actions variable THREADS_TARGETS instead.
+# Example:
+# threads
+# meta
